@@ -1,0 +1,1 @@
+1) Any assumptions about the data
