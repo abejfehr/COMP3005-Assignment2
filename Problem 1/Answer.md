@@ -34,4 +34,12 @@ Separate for each instrument, like drum tracks, vocal track, etc that all come t
 - Instrument
 - Name(could be the key)
 
+Database Grammar
+----------------
+- One CD must contain one or more songs
+- One song must be on one or more CDs
+- One song must consist of one or more tracks
+- One track must be in one or more songs
+- 
+
 Please refer to the accompanying E-R Diagram
