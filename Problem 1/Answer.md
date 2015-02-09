@@ -1,4 +1,4 @@
-1) The thought process is vaguely outlined below.
+The thought process is vaguely outlined below.
 
 CD
 --
@@ -12,7 +12,7 @@ CD
 **Note:** "Various Artists" is used for CD's that are a compilation
 
 ### Thoughts
-- Label or producers could be a key, but besides that there's nothing. Titles, artists, release dates, and songs can all share names
+- Label or producers could be a key, but besides that there's nothing. Titles, artists, release dates, and songs can all share names. This is why I added an ID field
 
 Song
 ----
@@ -36,10 +36,9 @@ Separate for each instrument, like drum tracks, vocal track, etc that all come t
 
 Database Grammar
 ----------------
-- One CD must contain one or more songs
-- One song must be on one or more CDs
-- One song must consist of one or more tracks
+- One CD must contain zero or more songs
+- One song may be on one or more CDs
+- One song may consist of one or more tracks
 - One track must be in one or more songs
-- 
 
 Please refer to the accompanying E-R Diagram
