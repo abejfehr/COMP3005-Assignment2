@@ -79,11 +79,49 @@ Notice that I didn't mention the prices &mdash; this is because the prices vary 
 Also notice that I've given McDonald's as an example for the above points, but they all apply to other fast-food joints as well.
 
 Conclusion
--------
+----------
 
 I've described the inception, application, and domain for this database throughout the document, and I'm fairly certain everyone is at least familiar with the *concept* of nutrition even if they don't know how to properly nourish themselves. It's a straightforward idea that's complex enough to be able to implement it as a database project for COMP3005.
 
 Any questions regarding this may be directed to me, and I'd be more than happy to provide you with further information on this idea.
+
+ER Diagram
+----------
+I've included an ER diagram that describes this project database.
+
+Here's an overview of why I did what I did.
+
+|Restaurants|
+|---|
+|Name(could be a key)|
+|MenuItems(collection)|
+
+**Thoughts:**
+- I think it's reasonable to assume there won't be two restaurants with the same name, so the name can be the key for this table.
+
+|MenuItems|
+|---------|
+|Name|
+|Calories|
+|Fat|
+|Carbohydrates|
+|Protein|
+
+**Thoughts:**
+- The values for fat, carbs and protein would be in grams. Each menu item won't contain it's price because of regional differences. Instead, price is something that the user will enter himself(which could be tedious)
+
+|Users|
+|---|
+|username(key candidate)|
+|password|
+|email(key candidate)|
+
+**Thoughts:**
+- Both the username and the email could be the key, so we'll make them the combined key.
+- Users also should have the ability to say which menu items they like or dislike, so they show up more often or show up less.
+- In the future, this database could be augmented to store purchase history with dates and times. I'm not sure about that feature yet, so I'll think about it.
+
+I didn't include a database grammar for this database, I don't believe it will be necessary since I've communicated my thoughts here.
 
 Sources
 -------
